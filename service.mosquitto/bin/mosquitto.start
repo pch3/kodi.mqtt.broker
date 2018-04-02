@@ -1,0 +1,7 @@
+#!/bin/sh
+
+mkdir /var/log/mosquitto/
+mkdir /var/lib/mosquitto/
+mkdir /var/run/mosquitto/
+
+mosquitto -c ../resources/etc/mosquitto.conf -d

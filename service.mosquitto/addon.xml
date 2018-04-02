@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="service.mosquitto"
+       name="Mosquitto broker and clients"
+       version="1.4.15-1"
+       provider-name="Piotr Chmylkowski">
+  <requires>
+    <import addon="os.libreelec.tv" version="8.2" />
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.service" library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary>MQTT version 3.1 and 3.1.1 compatible message broker and clients</summary>
+    <description>
+This is a message broker that supports version 3.1 and 3.1.1 of the MQTT
+protocol and two MQTT command line clients. mosquitto_pub can be
+used to publish messages to a broker and mosquitto_sub can be used to
+subscribe to a topic to receive messages.
+
+MQTT provides a method of carrying out messaging using a publish/subscribe
+model. It is lightweight, both in terms of bandwidth usage and ease of
+implementation. This makes it particularly useful at the edge of the network
+where a sensor or other simple device may be implemented using an arduino for
+example.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+    <news>
+1.4.15-1
+- Initial Release
+    </news>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
